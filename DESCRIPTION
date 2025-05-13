@@ -1,0 +1,30 @@
+Package: sreg
+Type: Package
+Title: Sudski registar
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Mislav", "Sagovac",
+      email = "mislav.sagovac@contetnio.biz",
+      role = c("aut", "cre")
+    )
+  )
+Description: Povlacenje podataka sa sudskog registra.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    R6,
+    data.table,
+    checkmate,
+    httr,
+    jsonlite
+Suggests:
+    arrow,
+    rmarkdown,
+    knitr,
+    rlang,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
