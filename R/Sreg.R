@@ -93,9 +93,9 @@ Sreg = R6::R6Class(
                         q = list(limit = 100, only_active = TRUE),
                         clean = TRUE) {
       # Create url
-      url = modify_url(paste0(URL, tag), query = q)
+      url = modify_url(paste0(self$url, tag), query = q)
       # Make GET request
-      cont = get_sreg_url(url)
+      cont = self$get(url)
       # Clean if needed
       if (clean == TRUE) {
         return(rbindlist(cont, fill = TRUE))
